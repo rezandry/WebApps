@@ -8,7 +8,14 @@
 1. Clone this repository
 2. Change .vs/config/applicationhost.config with your custom domain
 ``` HTML
-<binding protocol="http" bindingInformation="*:80:reza.xtremax.com" />
+<site name="WebApplication3" id="2">
+    <application path="/" applicationPool="Clr4IntegratedAppPool">
+        <virtualDirectory path="/" physicalPath="c:\users\rezaandriyunanto\documents\visual studio 2015\Projects\WebApplication3\WebApplication3" />
+    </application>
+    <bindings>
+        <binding protocol="http" bindingInformation="*:80:reza.xtremax.com" />
+    </bindings>
+</site>
 ```
 3. Add your custom domain in C://System32/drivers/etc/hosts
 ```
