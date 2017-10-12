@@ -7,7 +7,9 @@
 ### Guide
 1. Clone this repository
 2. Change .vs/config/applicationhost.config with your custom domain
-> <binding protocol="http" bindingInformation="*:80:reza.xtremax.com" />
+``` HTML
+<binding protocol="http" bindingInformation="*:80:reza.xtremax.com" />
+```
 3. Add your custom domain in C://System32/drivers/etc/hosts
 > 127.0.0.1     reza.xtremax.com
 4. Change your Project Setting (Project > <NameProject> Properties > Web > Servers) with your custom url
